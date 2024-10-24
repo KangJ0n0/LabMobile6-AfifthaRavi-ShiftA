@@ -9,10 +9,10 @@
                 <img src="https://www.gravatar.com/avatar?d=identicon" />
               </ion-avatar>
               <ion-label>
-                <h2>Guest</h2>
-                <p>Guest@example.com</p>
+                <h2>H1D022095</h2>
+                <p>Afiftha Ravi Aufa</p>
               </ion-label>
-              <ion-button @click="$router.push('/login')">Login</ion-button>
+              <ion-button @click="$router.push('/login')">Log Out</ion-button>
             </ion-item>
 
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in appPages" :key="i">
