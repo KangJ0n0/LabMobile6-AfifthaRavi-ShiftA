@@ -28,12 +28,26 @@
           >The Calibarn is the final battle upgrade for the protagonist, so it’s decked out with some of the coolest mechanism and gimmicks. It is no-doubt a much sought after kit for all fans and builders alike.
         </ion-card-content>
       </ion-card>
+
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://i.redd.it/wfm-gundam-pharact-v0-7undawiq68na1.jpg?width=4032&format=pjpg&auto=webp&s=4edd4a78dbd09ae78932a683bfd265efce7830bd" />
+        <ion-card-header>
+          <ion-card-subtitle>Wednesday, 23 October 2024</ion-card-subtitle>
+          <ion-card-title>Kit Review: HG TWFM 1/144 Gundam Pharact </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content
+          >With a dominant black tone, the Pharact has a mysterious appearance. Its design looks like the model of a “hunter” with a long rifle. Many of its parts are similar to Zowort (Pell Technologies’ main craft). It is also the reason
+          why in its first debut, it was mistaken for the black Zowort.
+        </ion-card-content>
+      </ion-card>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from "@ionic/vue";
+import { IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from "@ionic/vue";
+import { IonSearchbar } from "@ionic/vue";
 </script>
 
 <style scoped>

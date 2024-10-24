@@ -12,22 +12,21 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/profile",
-    name: "profile",
     component: () => import("../views/ProfilePage.vue"),
   },
   {
     path: "/login",
-    name: "login",
+
     component: () => import("../views/LoginPage.vue"),
   },
   {
     path: "/register",
-    name: "register",
+
     component: () => import("../views/RegisterPage.vue"),
   },
   {
     path: "/trash",
-    name: "trash",
+
     component: () => import("../views/TrashPage.vue"),
   },
 ];

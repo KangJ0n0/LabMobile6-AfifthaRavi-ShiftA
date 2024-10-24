@@ -12,7 +12,7 @@
                 <h2>Guest</h2>
                 <p>Guest@example.com</p>
               </ion-label>
-              <ion-button router-link="/login">Login</ion-button>
+              <ion-button @click="$router.push('/login')">Login</ion-button>
             </ion-item>
 
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in appPages" :key="i">
@@ -30,17 +30,17 @@
 </template>
 
 <script setup lang="ts">
-import { IonApp, IonContent, IonIcon, IonItem, IonLabel, IonList, IonMenu, IonMenuToggle, IonRouterOutlet, IonSplitPane } from "@ionic/vue";
+import { IonApp, IonContent, IonIcon, IonItem, IonLabel, IonList, IonMenu, IonMenuToggle, IonRouterOutlet, IonSplitPane, IonButton, IonAvatar } from "@ionic/vue";
 import { ref } from "vue";
-import { mailOutline, mailSharp, trashOutline, trashSharp } from "ionicons/icons";
+import { homeOutline, homeSharp, trashOutline, trashSharp } from "ionicons/icons";
 
 const selectedIndex = ref(0);
 const appPages = [
   {
     title: "Homepage",
     url: "/Homepage",
-    iosIcon: mailOutline,
-    mdIcon: mailSharp,
+    iosIcon: homeOutline,
+    mdIcon: homeSharp,
   },
   {
     title: "Trash",
