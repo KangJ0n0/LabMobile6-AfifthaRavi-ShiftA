@@ -18,12 +18,9 @@
 
       <div id="container">
         <strong class="capitalize">{{ $route.params.id }}</strong>
-        <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <h1 style="text-align: center">Belum bikin</h1>
       </div>
     </ion-content>
   </ion-page>
 </template>
-
-<script setup lang="ts">
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from "@ionic/vue";
-</script>
+<script lang="ts"></script>

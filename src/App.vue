@@ -4,8 +4,16 @@
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="inbox-list">
-            <ion-list-header>Inbox</ion-list-header>
-            <ion-note>hi@ionicframework.com</ion-note>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="https://www.gravatar.com/avatar?d=identicon" />
+              </ion-avatar>
+              <ion-label>
+                <h2>Guest</h2>
+                <p>Guest@example.com</p>
+              </ion-label>
+              <ion-button router-link="/login">Login</ion-button>
+            </ion-item>
 
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in appPages" :key="i">
               <ion-item @click="selectedIndex = i" router-direction="root" :router-link="p.url" lines="none" :detail="false" class="hydrated" :class="{ selected: selectedIndex === i }">
@@ -22,47 +30,23 @@
 </template>
 
 <script setup lang="ts">
-import { IonApp, IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle, IonNote, IonRouterOutlet, IonSplitPane } from "@ionic/vue";
+import { IonApp, IonContent, IonIcon, IonItem, IonLabel, IonList, IonMenu, IonMenuToggle, IonRouterOutlet, IonSplitPane } from "@ionic/vue";
 import { ref } from "vue";
-import { archiveOutline, archiveSharp, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from "ionicons/icons";
+import { mailOutline, mailSharp, trashOutline, trashSharp } from "ionicons/icons";
 
 const selectedIndex = ref(0);
 const appPages = [
   {
-    title: "Inbox",
-    url: "/folder/Inbox",
+    title: "Homepage",
+    url: "/Homepage",
     iosIcon: mailOutline,
     mdIcon: mailSharp,
   },
   {
-    title: "Outbox",
-    url: "/folder/Outbox",
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp,
-  },
-  {
-    title: "Favorites",
-    url: "/folder/Favorites",
-    iosIcon: heartOutline,
-    mdIcon: heartSharp,
-  },
-  {
-    title: "Archived",
-    url: "/folder/Archived",
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp,
-  },
-  {
     title: "Trash",
-    url: "/folder/Trash",
+    url: "/trash",
     iosIcon: trashOutline,
     mdIcon: trashSharp,
-  },
-  {
-    title: "Spam",
-    url: "/folder/Spam",
-    iosIcon: warningOutline,
-    mdIcon: warningSharp,
   },
 ];
 
