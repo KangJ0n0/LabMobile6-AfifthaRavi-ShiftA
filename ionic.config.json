@@ -1,0 +1,7 @@
+{
+  "name": "prakmob",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
